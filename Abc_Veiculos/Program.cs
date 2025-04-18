@@ -7,15 +7,33 @@ namespace Abc_Veiculos
     {
         static void Main(string[] args)
         {
-            TelaVeiculos telaVeiculo;
+            RepositorioVeiculo repositorio = new RepositorioVeiculo();
 
-            Console.WriteLine("fala ai mano");
+            TelaVeiculos veiculos = new TelaVeiculos(repositorio);
+            Telaprincipal menuPrincipal = new Telaprincipal();
 
 
-           string opcao = telaVeiculo.ExibirMenu();
 
-            switch 
+            while (true) {
+            string opcaoEscolhida = menuPrincipal.MenuPrincipal();
 
+                switch (opcaoEscolhida)
+                {
+                    case "1":
+                        veiculos.Cadastrar_Veiculo();
+                        break;
+
+                    case "2":
+                        veiculos.cadastrarDadosRevenda();
+                        break;
+
+                    case "3":
+                        veiculos.cadastrarDadosRevenda();
+                        break;
+
+                }
+
+            }
            
 
 

@@ -64,6 +64,9 @@ namespace Abc_Veiculos.Modulo_veiculo
             return NovoVeiculo;
         }
 
-
+        internal void cadastrarDadosRevenda()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -9,6 +9,8 @@ namespace Abc_Veiculos
         {
             TelaVeiculos telaVeiculo;
 
+            Console.WriteLine("fala ai mano");
+
 
            string opcao = telaVeiculo.ExibirMenu();
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Channels;
 using System.Threading.Tasks;
 
 namespace Abc_Veiculos.Modulo_veiculo
@@ -44,7 +45,7 @@ namespace Abc_Veiculos.Modulo_veiculo
         }
 
 
-
+        
         public Veiculo ObterDados_Veiculo()
         {
             Console.WriteLine("Informe a marca do veiculo");

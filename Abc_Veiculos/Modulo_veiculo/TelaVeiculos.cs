@@ -38,7 +38,7 @@ namespace Abc_Veiculos.Modulo_veiculo
         public void Cadastrar_Veiculo()
         {
             Veiculo NovoVeiculo = ObterDados_Veiculo();
-            Repositioveiculo.CadastrarVeiculo(NovoVeiculo);
+            Repositioveiculo.CadastrarRegistros(NovoVeiculo);
 
 
         }

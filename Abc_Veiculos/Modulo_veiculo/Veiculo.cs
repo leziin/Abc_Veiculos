@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Abc_Veiculos.compartilhado;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Abc_Veiculos.Modulo_veiculo
 {
-   public class Veiculo
+   public class Veiculo : EntidadeBase
     {
-        public int Id { get; set; }
+       
         public string Marca { get; set; }
         public string Modelo { get; set; }
         public DateTime Ano_Fabricacao { get; set; }
@@ -16,7 +17,7 @@ namespace Abc_Veiculos.Modulo_veiculo
         public Veiculo(string marca, string modelo, DateTime ano_fabricacao)
         {
             Marca = marca;
-            Modelo = Modelo;
+            Modelo = modelo;
             Ano_Fabricacao = ano_fabricacao;
 
 

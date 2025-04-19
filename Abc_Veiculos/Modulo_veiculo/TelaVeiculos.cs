@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Abc_Veiculos.Modulo_veiculo
 {
     
@@ -57,7 +52,7 @@ namespace Abc_Veiculos.Modulo_veiculo
 
 
             Console.WriteLine("Informe o Ano de fabricação do veiculo");
-            DateTime Ano_Fabricacao = Convert.ToDateTime(Console.ReadLine());
+            string Ano_Fabricacao = Console.ReadLine();
 
 
             Veiculo NovoVeiculo = new Veiculo(marca, Modelo, Ano_Fabricacao);
